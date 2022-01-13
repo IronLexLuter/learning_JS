@@ -21,7 +21,7 @@ while (remainingLatters > 0) {
         for (let j = 0; j < word.length; j++) {
             if (word[j] === guess) { //слово сравнивается с буквой которую мы ввели
                 answerArry[j] = guess; //если есть совпадение, буква заносится на свое место (т.к. переменная j одинакова для word и answerArry)
-                remainingLatters--; // при отгадывании буквы уменьшается число букв слова
+                remainingLatters--; // декремент переменной
             }
         }
     }
