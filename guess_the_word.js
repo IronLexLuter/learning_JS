@@ -13,7 +13,7 @@ let remainingLatters = word.length;
 while (remainingLatters > 0) {
     alert(answerArry.join(' ')); // объединяем массив answerArry и добавляем пробел между его элементами при помощи команды ' .join() '
     let guess = prompt ('Угадай букву или нажми Отмена для выхода из игры!'); //окно ввода буквы 
-    let guesses = guess.toLowerCase();
+    let guesses = guess.toLowerCase(); // если вводим большую букву
     if (guesses === null) {
         break; //можно использовать для немедленного выхода из любого цикла
     }else if (guesses.length !==1) { //проверяем, что ввели одну букву
